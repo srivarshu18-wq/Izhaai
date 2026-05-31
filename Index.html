@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Meta Tags for Elite SEO Optimization -->
+    <title>IZHAAI | Premium Plant-Based Rash-Free Protective Flow</title>
+    <meta name="description" content="Discover Izhaai, the premium circular hygiene brand upcycling pineapple leaf fibers and deep-seaweed into 100% biodegradable, rash-free sanitary pads.">
+
+    <!-- Premium Luxury Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Reengineered Logo-Inspired Luxury Eco Palette Configuration */
+        :root {
+            --pny-forest: #1E352F;       /* Izhaai Logo Style Deep Premium Green */
+            --pny-leaf: #2A4D3E;         /* Rich Leaf Green Accent Layer */
+            --bright-gold: #F4B942;       /* Radiant Golden Pineapple Core Text Accent */
+            --soft-amber: #F9D06B;        /* Smooth Warm Honey Subtitle Accent */
+            --ivory-white: #FAF6EE;       /* Premium Unbleached Silk Cream Content Contrast */
+            --pure-white: #FFFFFF;
+            --glass-card: rgba(30, 53, 47, 0.75);
+            --transition-smooth: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+            --font-display: 'Sora', sans-serif;
+            --font-body: 'Inter', sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: linear-gradient(180deg, var(--pny-forest) 0%, #152521 40%, var(--pny-leaf) 75%, var(--pny-forest) 100%);
+            color: var(--ivory-white);
+            font-family: var(--font-body);
+            overflow-x: hidden;
+            letter-spacing: -0.02em;
+            line-height: 1.7;
+        }
+
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        ::-webkit-scrollbar-track {
+            background: var(--pny-forest);
+        }
+        ::-webkit-scrollbar-thumb {
+            background: var(--bright-gold);
+            border-radius: 20px;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: var(--font-display);
+            color: var(--ivory-white);
+        }
+
+        .reveal-element {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: var(--transition-smooth);
+        }
+
+        .reveal-element.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .section-container {
+            padding: 140px 8% 100px;
+            max-width: 1440px;
+            margin: 50px auto;
+            position: relative;
+            z-index: 5;
+            border-radius: 40px;
+            background: radial-gradient(circle at center, rgba(42, 77, 62, 0.6) 0%, rgba(30, 53, 47, 0.85) 60%, rgba(21, 37, 33, 0.98) 100%);
+            border: 2px solid var(--pny-leaf);
+            box-shadow: 0 25px 60px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            overflow: hidden;
+        }
+
+        .section-tagline {
+            font-family: var(--font-display);
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            letter-spacing: 3px;
+            color: var(--bright-gold);
+            margin-bottom: 14px;
+            font-weight: 700;
+            display: block;
+        }
+
+        .section-title {
+            font-size: clamp(2.2rem, 5vw, 3.5rem);
+            line-height: 1.25;
+            letter-spacing: -0.03em;
+            margin-bottom: 18px;
+            font-weight: 800;
+        }
+
+        .section-subtitle {
+            font-size: 1.15rem;
+            font-weight: 300;
+            color: var(--soft-amber);
+            margin-bottom: 55px;
+            max-width: 700px;
+        }
+
+        .section-background-logo-mask {
+            position: absolute;
+            top: 50%; left: 50%;
+            width: 60vh;
+            height: 60vh;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+            opacity: 0.03; 
+            pointer-events: none;
+            background-image: url('logo.jpeg');
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .section-inner-content {
+            position: relative;
+            z-index: 5;
+        }
+
+        /* Fixed Luxury Glass Navigation Header Bar */
+        header {
+            position: fixed;
+            width: 100%;
+            top: 0; left: 0;
+            z-index: 2000;
+            background: rgba(30, 53, 47, 0.9);
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+            border-bottom: 2px solid var(--pny-leaf);
+        }
+
+        .nav-wrapper {
+            max-width: 1440px;
+            margin: 0 auto;
+            padding: 14px 6%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .brand-logo-frame {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            gap: 14px;
+        }
+
+        .brand-logo-img {
+            height: 60px; 
+            width: auto;
+            object-fit: contain;
+            border-radius: 12px;
+        }
+
+        .brand-logo-text {
+            font-family: var(--font-display);
+            font-weight: 800;
+            font-size: 1.55rem;
+            letter-spacing: 1px;
+            color: var(--ivory-white);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 40px;
+            list-style: none;
+            align-items: center;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--ivory-white);
+            font-size: 0.95rem;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--bright-gold);
+        }
+
+        .cart-indicator-frame {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(254, 185, 66, 0.15);
+            padding: 8px 18px;
+            border-radius: 30px;
+            color: var(--bright-gold);
+            font-weight: 600;
+            font-size: 0.9rem;
+            border: 1px solid rgba(244, 185, 66, 0.3);
+        }
+
+        /* Floating Vertical Stack Elements */
+        .iconic-floating-vertical-hub {
+            position: fixed;
+            bottom: 35px;
+            right: 35px;
+            z-index: 2500;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .iconic-hub-trigger-btn {
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--bright-gold) 0%, var(--pny-leaf) 100%);
+            color: var(--pny-forest);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 10px 25px rgba(244, 185, 66, 0.35);
+            border: 2px solid rgba(255, 255, 255, 0.25);
+            cursor: pointer;
+            transition: var(--transition-smooth);
+            text-decoration: none;
+        }
+
+        .iconic-hub-trigger-btn:hover {
+            transform: translateY(-5px) scale(1.05);
+            background: linear-gradient(135deg, var(--ivory-white) 0%, var(--bright-gold) 100%);
+            box-shadow: 0 15px 35px rgba(244, 185, 66, 0.5);
+        }
+
+        .master-glow-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--bright-gold) 0%, var(--soft-amber) 100%);
+            color: var(--pny-forest);
+            padding: 14px 32px;
+            font-family: var(--font-display);
+            font-weight: 700;
+            font-size: 0.95rem;
+            text-decoration: none;
+            border-radius: 100px;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 10px 25px rgba(244, 185, 66, 0.2);
+            transition: var(--transition-smooth);
+            text-align: center;
+        }
+
+        .master-glow-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 15px 35px rgba(244, 185, 66, 0.35);
+            background: linear-gradient(135deg, var(--ivory-white) 0%, var(--bright-gold) 100%);
+        }
+
+        .secondary-outline-btn {
+            display: inline-block;
+            background: transparent;
+            color: var(--ivory-white);
+            padding: 13px 30px;
+            font-family: var(--font-display);
+            font-weight: 600;
+            font-size: 0.95rem;
+            text-decoration: none;
+            border-radius: 100px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            cursor: pointer;
+            transition: var(--transition-smooth);
+            text-align: center;
+        }
+
+        .secondary-outline-btn:hover {
+            border-color: var(--bright-gold);
+            color: var(--bright-gold);
+            background: rgba(254, 185, 66, 0.05);
+        }
+
+        /* Hero Area Framework */
+        .hero-section {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            background: radial-gradient(circle at center, var(--pny-leaf) 0%, #172924 60%, var(--pny-forest) 100%);
+            padding: 0 24px;
+            overflow: hidden;
+            border-bottom: 2px solid var(--pny-leaf);
+        }
+
+        #hero-canvas {
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            pointer-events: none; z-index: 1;
+        }
+
+        .transparent-background-logo-mask {
+            position: absolute;
+            top: 50%; left: 50%;
+            width: 80vh;
+            height: 80vh;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+            opacity: 0.06; 
+            pointer-events: none;
+            background-image: url('logo.jpeg');
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .hero-content {
+            max-width: 950px;
+            position: relative;
+            z-index: 5;
+        }
+
+        .hero-title-reveal {
+            font-size: clamp(2.4rem, 6.5vw, 4.5rem);
+            line-height: 1.15;
+            margin-bottom: 24px;
+            letter-spacing: -0.04em;
+            font-weight: 800;
+        }
+
+        .hero-subtitle-reveal {
+            font-size: clamp(1.1rem, 2.2vw, 1.35rem);
+            font-weight: 400;
+            max-width: 760px;
+            margin: 0 auto 45px;
+            color: var(--soft-amber);
+            line-height: 1.6;
+        }
+
+        /* 3-Card Premium Side-by-Side Deck Configuration Grid */
+        .products-showcase-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* Enforces 3 premium cards side-by-side on desktop views */
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        .product-item-card {
+            background: rgba(30, 53, 47, 0.8);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-radius: 28px;
+            border: 2px solid var(--pny-leaf);
+            padding: 35px 30px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+            transition: var(--transition-smooth);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .product-item-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 25px 55px rgba(244, 185, 66, 0.12);
+            border-color: var(--bright-gold);
+        }
+
+        .product-image-frame {
+            width: 100%;
+            height: 260px;
+            background-color: var(--pny-forest);
+            border-radius: 20px;
+            margin-bottom: 25px;
+            overflow: hidden;
+            position: relative;
+            border: 1px solid var(--pny-leaf);
+        }
+
+        .product-image-frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.5s ease;
+        }
+
+        .product-item-card:hover .product-image-frame img {
+            transform: scale(1.04);
+        }
+
+        /* Highlighted Shipping Included Tag Badge Row */
+        .product-tag-benefit {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(254, 185, 66, 0.18);
+            color: var(--bright-gold);
+            padding: 6px 14px;
+            border-radius: 30px;
+            font-size: 0.78rem;
+            font-weight: 700;
+            margin-bottom: 16px;
+            align-self: flex-start;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border: 1px solid rgba(244, 185, 66, 0.25);
+        }
+
+        .product-item-card h3 {
+            font-size: 1.45rem;
+            margin-bottom: 12px;
+            font-weight: 700;
+            letter-spacing: -0.01em;
+        }
+
+        .product-item-card p {
+            color: rgba(250, 246, 238, 0.75);
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        .specifications-list {
+            list-style: none;
+            margin: 15px 0 25px;
+            padding-top: 15px;
+            border-top: 1px dashed var(--pny-leaf);
+        }
+
+        .specifications-list li {
+            font-size: 0.95rem;
+            color: var(--ivory-white);
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .specifications-list li::before {
+            content: "✦";
+            color: var(--bright-gold);
+            font-weight: 700;
+        }
+
+        /* Price prominently displayed with elegant typography */
+        .product-price-row {
+            margin-top: auto;
+            padding-top: 20px;
+            border-top: 1px solid rgba(250, 246, 238, 0.1);
+        }
+
+        .price-text-value {
+            font-family: var(--font-display);
+            font-size: 2.2rem;
+            font-weight: 800;
+            color: var(--bright-gold);
+            display: block;
+            margin-bottom: 20px;
+            letter-spacing: -0.02em;
+        }
+
+        /* CTA Button Action Cluster styling for Buy Now & Learn More on each card */
+        .card-action-cluster {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 12px;
+            width: 100%;
+        }
+
+        /* Small note disclaimer element below pricing matrix */
+        .pricing-footnote-disclaimer {
+            font-size: 0.95rem;
+            font-weight: 400;
+            color: var(--soft-amber);
+            margin-top: 45px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            justify-content: center;
+            width: 100%;
+        }
+
+        /* Packaging Alignment Grid */
+        .packaging-showcase-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-top: 40px;
+        }
+
+        .packaging-display-card {
+            background: rgba(30, 53, 47, 0.8);
+            backdrop-filter: blur(10px);
+            border-radius: 28px;
+            padding: 40px;
+            border: 2px solid var(--pny-leaf);
+            position: relative;
+            box-shadow: 0 12px 35px rgba(0,0,0,0.05);
+        }
+
+        .packaging-display-card p {
+            color: rgba(250, 246, 238, 0.75);
+        }
+
+        .dual-theme-top-overlay {
+            position: absolute;
+            top: -15px;
+            left: 40px;
+            background: linear-gradient(135deg, var(--bright-gold) 0%, var(--ocean-teal) 100%);
+            color: var(--pny-forest);
+            padding: 6px 22px;
+            border-radius: 30px;
+            font-family: var(--font-display);
+            font-size: 0.8rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        }
+
+        .packaging-image-box {
+            width: 100%;
+            height: 380px;
+            border-radius: 20px;
+            margin-bottom: 25px;
+            overflow: hidden;
+            border: 1px solid var(--pny-leaf);
+            background-color: var(--pny-forest);
+        }
+
+        .packaging-image-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .waitlist-card-box {
+            background: rgba(30, 53, 47, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 36px;
+            padding: 80px 50px;
+            max-width: 950px;
+            margin: 0 auto;
+            text-align: center;
+            border: 2px solid var(--pny-leaf);
+            background: radial-gradient(circle at bottom, rgba(42, 77, 62, 0.5) 0%, rgba(30, 53, 47, 0.95) 100%);
+            box-shadow: 0 30px 60px rgba(0,0,0,0.2);
+        }
+
+        .waitlist-secure-form {
+            display: flex;
+            gap: 15px;
+            max-width: 600px;
+            margin: 40px auto 0;
+        }
+
+        .waitlist-secure-form input {
+            flex: 1;
+            padding: 20px 28px;
+            border-radius: 100px;
+            border: 2px solid var(--pny-leaf);
+            font-size: 1.05rem;
+            outline: none;
+            background: var(--pny-forest);
+            color: var(--ivory-white);
+            font-family: var(--font-body);
+        }
+
+        /* Fully Responsive Grid Layout Overrides (Computer, Tab, and Mobile Adaptive Logic) */
+        @media (max-width: 1100px) {
+            /* Tablet Layout View Layer adjustments */
+            .products-showcase-grid {
+                grid-template-columns: repeat(2, 1fr); /* Drops smoothly to dual grid columns on medium screens */
+                gap: 25px;
+            }
+            .section-container { padding: 100px 6% 80px; }
+        }
+
+        @media (max-width: 768px) {
+            /* Mobile Layout View Layer adjustments */
+            .products-showcase-grid {
+                grid-template-columns: 1fr; /* Stacks completely into single full-width layout blocks on small handheld configurations */
+                gap: 30px;
+            }
+            .packaging-showcase-grid { grid-template-columns: 1fr; gap: 35px; }
+            .card-action-cluster { grid-template-columns: 1fr; gap: 10px; } /* Stacks button columns cleanly */
+            .nav-links { display: none; }
+            .waitlist-secure-form { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Premium Floating Iconic Social & Communication Hub Stack -->
+    <div class="iconic-floating-vertical-hub">
+        <a href="tel:+916382454785" class="iconic-hub-trigger-btn" title="Call Direct Support">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+        </a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="iconic-hub-trigger-btn" title="LinkedIn Interface">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+        </a>
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="iconic-hub-trigger-btn" title="Instagram Profile">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+        </a>
+    </div>
+
+    <!-- Fixed Luxury Golden Navigation Header Bar -->
+    <header>
+        <div class="nav-wrapper">
+            <a href="https://izhaai.com" class="brand-logo-frame">
+                <img src="logo.jpeg" alt="IZHAAI Pure Identity Emblem" class="brand-logo-img">
+                <span class="brand-logo-text">IZHAAI</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#product-catalog">Our Products</a></li>
+                <li><a href="#product-benefits">Core Benefits</a></li>
+                <li><a href="#packaging-range">Packaging Range</a></li>
+                <li>
+                    <div class="cart-indicator-frame">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                        <span>Cart (<span id="globalCartValueCount">0</span>)</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Vibrant Golden Yellow Theme Hero Presentation Section Layout -->
+    <section class="hero-section">
+        <canvas id="hero-canvas"></canvas>
+        <div class="transparent-background-logo-mask"></div>
+        
+        <div class="hero-content">
+            <h1 class="hero-title-reveal">Rash-Free Protection.<br>Formed From Rescued Plants.</h1>
+            <p class="hero-subtitle-reveal">Meet Izhaai: premium plant-based pad engineered with high-performing upcycled pineapple leaf fibers to keep unbleached flow breathable, completely rash-free, and chlorine-free. Pure structural security that aligns with your body's natural pH lines perfectly.</p>
+            <a href="#product-catalog" class="master-glow-btn">Explore Products & Pricing</a>
+        </div>
+    </section>
+
+    <!-- SECTION 1: COMPUTER, TAB & MOBILE RESPONSIVE PRICING & PRODUCTS BLOCK -->
+    <section class="section-container" id="product-catalog">
+        <div class="section-background-logo-mask"></div>
+
+        <div class="section-inner-content">
+            <span class="section-tagline">Premium Offerings</span>
+            <h2 class="section-title">Our Products</h2>
+            <p class="section-subtitle">Select your tailored, unbleached botanical protection loop. Complete upfront transit transparency, no hidden checkout variations.</p>
+            
+            <!-- Side-by-Side Responsive Card Alignment Deck Grid -->
+            <div class="products-showcase-grid reveal-element">
+                
+                <!-- Product Card 1: Izhaai Disposable Kit -->
+                <div class="product-item-card">
+                    <div class="product-tag-benefit">
+                        <!-- Elegant Custom Cargo Icon Badge -->
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" style="margin-right:4px;"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
+                        <span>Shipping Included</span>
+                    </div>
+                    <div class="product-image-frame">
+                        <img src="disposable pads .jpg.png" alt="Izhaai Disposable Protective Pads Travel Box Layout">
+                    </div>
+                    <h3>Izhaai Disposable Kit</h3>
+                    <p>Single-use hygiene kit designed for convenience, safety, and comfort during travel.</p>
+                    
+                    <ul class="specifications-list">
+                        <li><strong>Composition:</strong> Upcycled PALF Core, Organic Muslin Top Sheet.</li>
+                        <li><strong>Batch Volume:</strong> Pack of 10 Regular Comfort Liners.</li>
+                    </ul>
+
+                    <div class="product-price-row">
+                        <span class="price-text-value">₹299</span>
+                        <div class="card-action-cluster">
+                            <a href="https://wa.me/916382454785?text=Hi%20Izhaai%2C%20I%20want%20to%20Buy%20Now%20the%20Izhaai%20Disposable%20Kit%20(Price%20%E2%82%B9299)." target="_blank" rel="noopener noreferrer" class="master-glow-btn">Buy Now</a>
+                            <a href="#product-benefits" class="secondary-outline-btn">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 2: Izhaai Reusable Kit -->
+                <div class="product-item-card">
+                    <div class="product-tag-benefit">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" style="margin-right:4px;"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
+                        <span>Shipping Included</span>
+                    </div>
+                    <div class="product-image-frame">
+                        <img src="reusable pad.jpg.png" alt="Izhaai Washable Reusable Cotton Period Kit Layering">
+                    </div>
+                    <h3>Izhaai Reusable Kit</h3>
+                    <p>Eco-friendly reusable hygiene solution made for long-term use and everyday confidence.</p>
+                    
+                    <ul class="specifications-list">
+                        <li><strong>Composition:</strong> Washable multi-tier organic cotton matrix lines.</li>
+                        <li><strong>Batch Volume:</strong> Chest of 5 Washable Eco-Chic Pads.</li>
+                    </ul>
+
+                    <div class="product-price-row">
+                        <span class="price-text-value">₹499</span>
+                        <div class="card-action-cluster">
+                            <a href="https://wa.me/916382454785?text=Hi%20Izhaai%2C%20I%20want%20to%20Buy%20Now%20the%20Izhaai%20Reusable%20Kit%20(Price%20%E2%82%B9499)." target="_blank" rel="noopener noreferrer" class="master-glow-btn">Buy Now</a>
+                            <a href="#product-benefits" class="secondary-outline-btn">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 3: Izhaai Compact Kit -->
+                <div class="product-item-card">
+                    <div class="product-tag-benefit">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" style="margin-right:4px;"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
+                        <span>Shipping Included</span>
+                    </div>
+                    <div class="product-image-frame">
+                        <img src="compact kit.jpg.png" alt="Izhaai Luxury All-In-One Compact Periods Kit Drawer Storage">
+                    </div>
+                    <h3>Izhaai Compact Kit</h3>
+                    <p>Premium all-in-one compact hygiene kit combining portability, durability, and style.</p>
+                    
+                    <ul class="specifications-list">
+                        <li><strong>Composition:</strong> Recycled hardcase layers, built-in multi drawer pulls.</li>
+                        <li><strong>Batch Volume:</strong> Presentation Box Container + Refill Packs.</li>
+                    </ul>
+
+                    <div class="product-price-row">
+                        <span class="price-text-value">₹699</span>
+                        <div class="card-action-cluster">
+                            <a href="https://wa.me/916382454785?text=Hi%20Izhaai%2C%20I%20want%20to%20Buy%20Now%20the%20Izhaai%20Compact%20Kit%20(Price%20%E2%82%B9699)." target="_blank" rel="noopener noreferrer" class="master-glow-btn">Buy Now</a>
+                            <a href="#product-benefits" class="secondary-outline-btn">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Inclusive structural indian delivery disclaimer message block notice -->
+            <div class="pricing-footnote-disclaimer">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12" y2="8"></line></svg>
+                <span>All prices are inclusive of standard shipping across India.</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 2: FUNCTIONAL PRODUCT BENEFITS MATRIX -->
+    <section class="section-container" id="product-benefits">
+        <div class="section-background-logo-mask"></div>
+
+        <div class="section-inner-content">
+            <span class="section-tagline">The Core Pillars</span>
+            <h2 class="section-title">The Intimate Health Benefits</h2>
+            <p class="section-subtitle">Why conscious consumers are leaving synthetic pharmacy alternatives behind for unbleached plant technology.</p>
+            
+            <div class="benefits-matrix-grid reveal-element">
+                <div class="benefit-matrix-node">
+                    <h3 style="color: var(--bright-gold);">3X Capillary Absorption</h3>
+                    <p>Rescued pineapple leaf fiber paths lock moisture inside the pad base immediately, guaranteeing 8 hours of dry comfort.</p>
+                </div>
+                <div class="benefit-matrix-node">
+                    <h3 style="color: var(--bright-gold);">100% Rash-Free Safety</h3>
+                    <p>Completely free from artificial plastic sheets, toxins, perfumes, or chlorine bleach elements that disrupt local skin equilibrium.</p>
+                </div>
+                <div class="benefit-matrix-node">
+                    <h3 style="color: var(--bright-gold);">Skin pH Equilibrium</h3>
+                    <p>Unbleached natural cotton fibers match physiological moisture levels perfectly to prevent heat rashes or chaffing lines.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: LUXURY ECO SUSTAINABLE PACKAGING -->
+    <section class="section-container" id="packaging-range">
+        <div class="section-background-logo-mask"></div>
+
+        <div class="section-inner-content">
+            <span class="section-tagline">Structural Packaging</span>
+            <h2 class="section-title">Eco-Luxury Box Formats</h2>
+            <p class="section-subtitle">An inside view exploring our custom tactile structural packaging profiles engineered cleanly from unbleached organic stock.</p>
+            
+            <div class="packaging-showcase-grid reveal-element">
+                <div class="packaging-display-card">
+                    <div class="dual-theme-top-overlay">Born From Earth</div>
+                    <div class="packaging-image-box">
+                        <img src="Crown inspired.jpg.png" alt="Izhaai Close Up Pineapple Crown Inspired Packaging Structure" style="object-position: center; transform: scale(1.02);">
+                    </div>
+                    <h3>The Pineapple Crown Inspired Box</h3>
+                    <p>Inspired by the crown of a pineapple. A bold, iconic structure that stands out beautifully on your countertop, crafted from unbleached compostable crop fibers.</p>
+                </div>
+
+                <div class="packaging-display-card">
+                    <div class="dual-theme-top-overlay">Ocean & Earth Dual Concept</div>
+                    <div class="packaging-image-box">
+                        <img src="dual concept.jpg.png" alt="Izhaai Central Ocean and Earth Dual Concept Box Panel Artwork" style="object-position: center; transform: scale(1.02);">
+                    </div>
+                    <h3>Born From Land & Sea Dual Presentation</h3>
+                    <p>A perfect blend of ocean (seaweed) and earth (pineapple fiber) — our two powerful sources. An elegant graphic canvas showcasing circular land and sea engineering footprints.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4: CONVERSION REGISTRATION WAITLIST ENDPOINT -->
+    <section class="section-container" id="early-access" style="background: transparent; border: none; backdrop-filter: none; box-shadow: none; -webkit-backdrop-filter: none;">
+        <div class="waitlist-card-box reveal-element">
+            <span class="section-tagline">Early Allocations Circle</span>
+            <h2 class="section-title" style="font-size: 2.3rem; margin-bottom: 12px; text-align: center;">Join the Circular Movement</h2>
+            <p style="max-width: 580px; margin: 0 auto; color: var(--soft-amber);">Secure validation slots for our upcoming release batches and receive direct development milestones along the queue line.</p>
+            
+            <form action="https://formspree.io/f/xknbovra" method="POST" class="waitlist-secure-form">
+                <input type="email" name="email" required placeholder="Enter your email address" aria-label="Secure waitlist registration contact hook">
+                <button type="submit" class="master-glow-btn">Secure Allocation Slot</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Minimal Functional Footer Layout -->
+    <footer>
+        <p>&copy; 2026 <a href="https://izhaai.com" style="color: var(--soft-amber); text-decoration: none;">izhaai.com</a>. All Rights Reserved.</p>
+        <div>
+            <p style="font-size:0.9rem; color: rgba(250,246,238,0.6);">Support Node Link: <a href="tel:+916382454785" style="color:var(--bright-gold); font-weight:600; text-decoration:underline; margin:0;">+91 63824 54785</a></p>
+        </div>
+    </footer>
+
+    <!-- Script Engines Configuration -->
+    <script>
+        const canvas = document.getElementById('hero-canvas');
+        const ctx = canvas.getContext('2d');
+        let particlesArray = [];
+        let wavePhase = 0;
+
+        function resizeCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        }
+        window.addEventListener('resize', resizeCanvas);
+        resizeCanvas();
+
+        class WaveParticle {
+            constructor() {
+                this.x = Math.random() * canvas.width;
+                this.baseY = Math.random() * canvas.height;
+                this.y = this.baseY;
+                this.size = Math.random() * 2 + 1;
+                this.speedX = Math.random() * 0.4 + 0.1;
+                this.amplitude = Math.random() * 25 + 10;
+                this.frequency = Math.random() * 0.003 + 0.002;
+                this.color = 'rgba(244, 185, 66, 0.2)';
+            }
+            update() {
+                this.x += this.speedX;
+                this.y = this.baseY + Math.sin(this.x * this.frequency + wavePhase) * this.amplitude;
+                if (this.x > canvas.width) {
+                    this.x = 0;
+                    this.baseY = Math.random() * canvas.width;
+                }
+            }
+            draw() {
+                ctx.fillStyle = this.color;
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                ctx.fill();
+            }
+        }
+
+        function initParticles() {
+            particlesArray = [];
+            for (let i = 0; i < 60; i++) {
+                particlesArray.push(new WaveParticle());
+            }
+        }
+
+        function animateParticles() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            wavePhase += 0.004;
+            for (let i = 0; i < particlesArray.length; i++) {
+                particlesArray[i].update();
+                particlesArray[i].draw();
+            }
+            requestAnimationFrame(animateParticles);
+        }
+        initParticles();
+        animateParticles();
+
+        // Cycling Text Button Conversion Engine Toggler
+        const phrases = ["Reserve Private Batch", "Secure Rash-Free Box", "Join the Movement"];
+        let phaseIndex = 0;
+        setInterval(() => {
+            phaseIndex = (phaseIndex + 1) % phrases.length;
+            const textNode = document.getElementById('ctaDynamicText');
+            if(textNode) textNode.innerText = phrases[phaseIndex];
+        }, 3000);
+
+        // Scroll Tracking Reveals
+        const scrollRevealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) entry.target.classList.add('visible');
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.reveal-element').forEach(el => scrollRevealObserver.observe(el));
+    </script>
+</body>
+</html>
