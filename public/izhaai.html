@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Izhaai - Be the Flow</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #f5f1ed;
+            color: #2d4a3a;
+            line-height: 1.6;
+        }
+
+        /* Header & Navigation */
+        header {
+            background-color: #f5f1ed;
+            padding: 2rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 1px solid rgba(45, 74, 58, 0.1);
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            text-decoration: none;
+            color: #2d4a3a;
+            font-size: 1.5rem;
+            font-weight: 600;
+            letter-spacing: 0.15em;
+        }
+
+        .logo img {
+            width: 50px;
+            height: 50px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #2d4a3a;
+            font-size: 0.95rem;
+            letter-spacing: 0.05em;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #b8956a;
+        }
+
+        /* Hero Section */
+        .hero {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .hero-content h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            line-height: 1.1;
+            color: #2d4a3a;
+        }
+
+        .hero-content p {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            color: #4a6b59;
+            max-width: 500px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: #2d4a3a;
+            color: #f5f1ed;
+            padding: 0.875rem 2rem;
+            text-decoration: none;
+            border-radius: 0;
+            letter-spacing: 0.1em;
+            font-size: 0.95rem;
+            transition: background-color 0.3s ease;
+            border: 2px solid #2d4a3a;
+        }
+
+        .cta-button:hover {
+            background-color: #f5f1ed;
+            color: #2d4a3a;
+        }
+
+        .hero-image {
+            text-align: center;
+        }
+
+        .hero-image img {
+            max-width: 100%;
+            height: auto;
+            width: 400px;
+        }
+
+        /* Features Section */
+        .features {
+            background-color: #2d4a3a;
+            color: #f5f1ed;
+            padding: 4rem 2rem;
+            margin: 4rem 0;
+        }
+
+        .features-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .features h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            letter-spacing: 0.05em;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+
+        .feature-card {
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .feature-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 0.75rem;
+            color: #b8956a;
+            letter-spacing: 0.05em;
+        }
+
+        .feature-card p {
+            font-size: 0.95rem;
+            line-height: 1.7;
+            color: #e8e4df;
+        }
+
+        /* Products Section */
+        .products {
+            max-width: 1200px;
+            margin: 4rem auto;
+            padding: 0 2rem;
+        }
+
+        .products h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: #2d4a3a;
+            letter-spacing: 0.05em;
+        }
+
+        .products-showcase {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 3rem;
+            margin-bottom: 4rem;
+        }
+
+        .product-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 0;
+        }
+
+        .product-item img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .product-item:hover img {
+            transform: scale(1.02);
+        }
+
+        .product-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(45, 74, 58, 0.95), transparent);
+            padding: 2rem;
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+        }
+
+        .product-item:hover .product-overlay {
+            transform: translateY(0);
+        }
+
+        .product-overlay h3 {
+            color: #b8956a;
+            margin-bottom: 0.5rem;
+            letter-spacing: 0.05em;
+        }
+
+        .product-overlay p {
+            color: #e8e4df;
+            font-size: 0.9rem;
+        }
+
+        /* Values Section */
+        .values {
+            background-color: #e8dcd3;
+            padding: 4rem 2rem;
+            margin: 4rem 0;
+        }
+
+        .values-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .values h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: #2d4a3a;
+            letter-spacing: 0.05em;
+        }
+
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+        }
+
+        .value-card {
+            background-color: #f5f1ed;
+            padding: 2rem;
+            border-left: 4px solid #b8956a;
+        }
+
+        .value-card h3 {
+            color: #2d4a3a;
+            margin-bottom: 0.75rem;
+            font-size: 1.2rem;
+            letter-spacing: 0.05em;
+        }
+
+        .value-card p {
+            color: #4a6b59;
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+
+        /* Dual Concept Section */
+        .dual-concept {
+            max-width: 1200px;
+            margin: 4rem auto;
+            padding: 0 2rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .concept-text h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: #2d4a3a;
+            letter-spacing: 0.05em;
+        }
+
+        .concept-text p {
+            font-size: 1rem;
+            margin-bottom: 1rem;
+            color: #4a6b59;
+            line-height: 1.8;
+        }
+
+        .concept-image img {
+            width: 100%;
+            height: auto;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #2d4a3a;
+            color: #e8e4df;
+            padding: 3rem 2rem;
+            margin-top: 4rem;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-column h4 {
+            color: #b8956a;
+            margin-bottom: 1rem;
+            font-size: 0.95rem;
+            letter-spacing: 0.05em;
+        }
+
+        .footer-column ul {
+            list-style: none;
+        }
+
+        .footer-column a {
+            color: #e8e4df;
+            text-decoration: none;
+            font-size: 0.9rem;
+            line-height: 1.8;
+            transition: color 0.3s ease;
+        }
+
+        .footer-column a:hover {
+            color: #b8956a;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(184, 149, 106, 0.3);
+            padding-top: 2rem;
+            text-align: center;
+            font-size: 0.85rem;
+            color: #b8956a;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero {
+                grid-template-columns: 1fr;
+                padding: 2rem;
+            }
+
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero-image img {
+                width: 300px;
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .products-showcase {
+                grid-template-columns: 1fr;
+            }
+
+            .values-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .dual-concept {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+            }
+
+            nav ul {
+                gap: 1rem;
+            }
+
+            nav a {
+                font-size: 0.85rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <a href="#" class="logo">
+                <span>IZHAAI</span>
+            </a>
+            <ul>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#values">Our Story</a></li>
+                <li><a href="#concept">Concept</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Be the Flow</h1>
+            <p>Sustainable menstrual care born from the harmony of ocean and earth. Experience comfort without compromise, crafted with nature in mind.</p>
+            <a href="#products" class="cta-button">Explore Our Products</a>
+        </div>
+        <div class="hero-image">
+            <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo-OVxsl7gd8O6RY7jnfsPDmbhwArgYeX.jpeg" alt="Izhaai Logo">
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="features-container">
+            <h2>Why Izhaai</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🌊</div>
+                    <h3>Ocean & Earth</h3>
+                    <p>A dual concept combining the purity of seaweed from the ocean with sustainable pineapple fiber from the earth.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">♻️</div>
+                    <h3>100% Sustainable</h3>
+                    <p>Reusable and disposable options that are toxin-free, comfortable, and kind to the planet.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌿</div>
+                    <h3>Plant-Based</h3>
+                    <p>Made with natural, organic materials that respect both your body and the environment.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="products">
+        <h2>Our Collections</h2>
+        <div class="products-showcase">
+            <div class="product-item">
+                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/reusable%20pad.jpg.png-3NZXT8txCvVCpdkRA1M35o83tysIKW.jpeg" alt="Reusable Pads">
+                <div class="product-overlay">
+                    <h3>Reusable Pads</h3>
+                    <p>Durable, washable, and designed for comfort. Build your sustainable routine.</p>
+                </div>
+            </div>
+            <div class="product-item">
+                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/disposable%20pads%20.jpg.png-CNjv5dXSFNTXUbebaFxKfm5KawRyrc.jpeg" alt="Disposable Pads">
+                <div class="product-overlay">
+                    <h3>Disposable Pads</h3>
+                    <p>Eco-friendly, biodegradable alternatives for on-the-go protection.</p>
+                </div>
+            </div>
+            <div class="product-item">
+                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Crown%20inspired.jpg.png-Ti0pPylnd1bS3kvneRfucxv7CFdW56.jpeg" alt="Storage Tin">
+                <div class="product-overlay">
+                    <h3>Reusable Storage</h3>
+                    <p>Beautiful, sustainable storage solution with elegant design.</p>
+                </div>
+            </div>
+            <div class="product-item">
+                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/compact%20kit.jpg.png-6xvKnzjupQ7yQQqMrhv4poPI39wUUx.jpeg" alt="Compact Kit">
+                <div class="product-overlay">
+                    <h3>Complete Kit</h3>
+                    <p>Everything you need in one beautifully designed premium gift box.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dual Concept Section -->
+    <section class="dual-concept" id="concept">
+        <div class="concept-text">
+            <h2>Ocean & Earth Dual Concept</h2>
+            <p>Born from the perfect balance of nature's two most abundant sources, Izhaai combines seaweed from the ocean with pineapple fiber from the earth.</p>
+            <p><strong>Ocean (Seaweed):</strong> Natural, nutrient-rich, and sustainably harvested for superior comfort and care.</p>
+            <p><strong>Earth (Pineapple Fiber):</strong> An agricultural by-product transformed into premium, eco-friendly material.</p>
+        </div>
+        <div class="concept-image">
+            <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/dual%20concept.jpg.png-9YngiZExbH1lUHXm5PrfqfO8kn0aQE.jpeg" alt="Ocean and Earth Dual Concept">
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="values" id="values">
+        <div class="values-container">
+            <h2>Our Values</h2>
+            <div class="values-grid">
+                <div class="value-card">
+                    <h3>Sustainability First</h3>
+                    <p>Every product is designed with the planet in mind. From materials to packaging, we prioritize ecological responsibility.</p>
+                </div>
+                <div class="value-card">
+                    <h3>Comfort & Care</h3>
+                    <p>You deserve menstrual care that feels as good as it is responsible. Our products provide superior comfort without compromise.</p>
+                </div>
+                <div class="value-card">
+                    <h3>Toxin-Free</h3>
+                    <p>No harmful chemicals, no synthetic fragrances. Just pure, natural materials that support your wellbeing.</p>
+                </div>
+                <div class="value-card">
+                    <h3>Empowerment</h3>
+                    <p>Be the flow. Embrace your cycle with products that empower you to live freely and confidently.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="footer-column">
+                <h4>About Izhaai</h4>
+                <ul>
+                    <li><a href="#">Our Story</a></li>
+                    <li><a href="#">Sustainability</a></li>
+                    <li><a href="#">Materials</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Customer Care</h4>
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Shipping & Returns</a></li>
+                    <li><a href="#">Care Instructions</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Connect</h4>
+                <ul>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Newsletter</a></li>
+                    <li><a href="#">Community</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Izhaai. All rights reserved. Be the Flow.</p>
+        </div>
+    </footer>
+</body>
+</html>
